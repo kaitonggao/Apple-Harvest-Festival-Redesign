@@ -1,3 +1,3 @@
-# Apple-Harvest-Festival-Redesign
+# Project 2 for INFO 1300
 
-A redesign of the Ithaca Apple Harvest Festival Website
+A redesign of the apple harvest festival app.
