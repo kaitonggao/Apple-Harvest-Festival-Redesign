@@ -1,3 +1,3 @@
-# Project 2 for INFO 1300
+# Project 3
 
-A redesign of the apple harvest festival app.
+**Submission Instructions:** Stage, commit, and push your changed files. Then complete the submission form: <https://cornell.ca1.qualtrics.com/jfe/form/SV_8wcADWfpfPjrbYG>

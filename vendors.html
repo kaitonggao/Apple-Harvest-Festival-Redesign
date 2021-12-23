@@ -7,19 +7,41 @@
     <title>Vendors</title>
   </head>
   <body>
-
-    <nav>
-      <ul class="nav-ul">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="vendors.html">Vendors</a></li>
-          <li><a href="map.html">Map and Directions</a></li>
-
+    <section class="navigation">
+      <div class="hamburger-icon-vendors hamburger-icon" id="hamburger">
+         <span></span>
+         <span></span>
+         <span></span>
+      </div>
+      <nav id="vertical-nav" class="hidden vertical-nav">
+        <p class="close" id="hamburger-exit">x</p>
+        <ul class="nav-ul-vert H">
+            <li> <img src="images/af-logo.svg"
+                alt=""
+                class="svg"></li>
+            <li><img src="images/divider3.png"
+                alt=""
+                class="divider"></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="vendors.html">Vendors</a></li>
+            <li><a href="map.html">Map and Directions</a></li>
+            <li><img src="images/divider3.png"
+                alt=""
+                class="divider"></li>
         </ul>
-    </nav>
+      </nav>
+      <nav id="horizontal-nav">
+        <ul class="nav-ul">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="vendors.html">Vendors</a></li>
+            <li><a href="map.html">Map and Directions</a></li>
+        </ul>
+      </nav>
+    </section>
 
-    <div class="v-start">
-      <h1>Vendors</h1>
-    </div>
+
+    <h1 class="vendors-header">Vendors</h1>
+
 
     <div class="v-start flex-center-row">
       <div class="v-intro intro-food">
@@ -38,9 +60,73 @@
       </div>
     </div>
 
+    <div id="popup-container1" class="popup-containers hidden">
+      <div class="popup little-tree-popup" id="street-pita">
+        <div class="flex-center">
+
+          <h1><span class="popup-close" id="sp-close">x</span> On the Street Pita</h1>
+          <img src="images/divider3.png"
+              alt=""
+              class="divider">
+          <div class="flex-row popup-info">
+            <div>
+              <!-- Source: http://nebula.wsimg.com/20114bb4fefb33a3c3e39c3f53ec6896?AccessKeyId=57ECFB2A7546CCE28383&disposition=0&alloworigin=1-->
+              <img src="images/street-pita.jpg"
+                alt=""
+                class="popup-image street-pita-image">
+                <p class="popup-cite"><cite class="small-cite"><a href="http://www.onthestreetpitas.com/welcome.html">
+                  Source: On the Street Pita</a></cite></p>
+              </div>
+            <div class="popup-text">
+              <p> Eats like a salad, then like a sandwich.</p>
+
+              <p>Welcome to Ithaca's best little pita concession, where we build the best pita sandwiches or salad's you’ve ever had. We start with only the freshest ingredients and build it just the way you like.  </p>
+
+
+          <!-- Source:https://www.freepik.com/free-vector/botanical-dividers-set_4949971.htm#page=1&query=Flower%20divider&position=6-->
+          <p> <cite class="small-cite"><a href="https://www.freepik.com/free-vector/botanical-dividers-set_4949971.htm#page=1&query=Flower%20divider&position=6">Divider: Rawpixel</a></cite></p>
+
+                <a href="http://www.onthestreetpitas.com/welcome.html"><span class="btn p-btn">Come Visit Our Website!</span></a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="popup-container2" class="popup-containers hidden">
+      <div class="popup little-tree-popup" id="little-tree">
+        <div class="flex-center">
+
+          <h1><span class="popup-close" id="lt-close">x</span> Little Tree Orchard</h1>
+          <!-- Source: https://www.littletree-orchards.com/product/large-littletree-sampler/12?cp=true&sa=true&sbp=false&q=false-->
+          <img src="images/divider3.png"
+              alt=""
+              class="divider">
+          <div class="flex-row popup-info">
+            <div>
+              <img src="images/little-tree.png"
+                alt=""
+                class="popup-image">
+                <p class="popup-cite"><cite class="small-cite"><a href="https://www.littletree-orchards.com/product/large-littletree-sampler/12?cp=true&sa=true&sbp=false&q=false">
+                  Source: Little Tree Orchard</a></cite></p>
+              </div>
+            <div class="popup-text">
+              <p> Littletree Orchards, established in 1973, produces quality apples, peaches, sweet cherries, tart cherries, asian pears, tomatoes, brussel sprouts, pumpkins, winter squash, basil, dried flowers, and gourds.</p>
+              <p> Get all of our wonderful apple products at the Ithaca Farmers Market on Saturdays and Sundays. Check out our shop here on our website where you can purchase some of our products for the holiday season!</p>
+
+              <!-- Source:https://www.freepik.com/free-vector/botanical-dividers-set_4949971.htm#page=1&query=Flower%20divider&position=6-->
+              <p> <cite class="small-cite"><a href="https://www.freepik.com/free-vector/botanical-dividers-set_4949971.htm#page=1&query=Flower%20divider&position=6">Divider: Rawpixel</a></cite></p>
+            </div>
+          </div>
+            <a href="https://www.littletree-orchards.com/"><span class="btn p-btn">Come Visit Our Website!</span></a>
+        </div>
+      </div>
+    </div>
 
 
     <div class="vendors-middle">
+
       <section class="v-middle vendors-food" id="food">
         <h2>Food</h2>
         <p class="line"> _________</p>
@@ -73,6 +159,7 @@
 
     </div>
 
+
      <div class="v-body-prices"> Prices of food items range anywhere from $5 - $20+. </div>
 
      <div class="v-vendors">
@@ -85,7 +172,7 @@
         <li> - AJ Teeter Farm</li>
         <li>- Bakers' Acres</li>
         <li> - Ella's Acres</li>
-        <li>- Little Tree Orchards</li>
+        <li>- <span id="little-tree-link" class="popup-link">Little Tree Orchards</span></li>
         <li>- MacDonald Farms</li>
         <li>- Robbies Farm Market</li>
         <li>- Society of Horticulture</li>
@@ -111,7 +198,7 @@
             <li>- Coltivare</li>
             <li>- CreamCycle</li>
             <li>- Momo Bar</li>
-            <li>- On the Street Pitas</li>
+            <li>-  <span id="street-pita-link" class="popup-link">On the Street Pitas</span></li>
             <li>- Little Grey Bakery</li>
             <li>- Lou's Covert City Store</li>
             <li>- Mr. Squeeze Lemonade</li>
@@ -164,9 +251,10 @@
 
         <div class="v-body-prices"> Crafts range from $15 - $100+ </div>
 
-        <div class="v-body"><h2>Participating Crafters</h2>
+        <div class="v-body v-body-crafters"><h2>Participating Crafters</h2>
           <!-- Instructor Provided Content !-->
 
+          <div class="crafters">
           <ul>
           <li>- Art by Mary Shelley</li>
           <li>- Balance Aromatherapy</li>
@@ -174,6 +262,9 @@
           <li>- Carriage House Woodcrafters</li>
           <li>- Dear Elaan Jewelry</li>
           <li>- Earth 'n' Fire Pottery</li>
+          </ul>
+
+          <ul>
           <li>- Easy Living Hats</li>
           <li>- Ithaca Sheepskins</li>
           <li>- Planetarium Designs</li>
@@ -182,6 +273,7 @@
           <li>- Two Foxes Studio</li>
           <li> ...and many more!</li>
           </ul>
+        </div>
         </div>
       </section>
 
@@ -245,6 +337,8 @@
       </section>
   </div>
 
+  <script type="text/javascript" src="scripts/jquery-3.6.0.js"></script>
+  <script type="text/javascript" src="scripts/home.js"></script>
 
   </body>
 </html>

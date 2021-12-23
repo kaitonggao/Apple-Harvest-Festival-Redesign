@@ -6,15 +6,52 @@
     <title>Ithaca Apple Harvest Festival</title>
   </head>
   <body>
-
-    <nav>
+  <section class="navigation">
+    <div class="hamburger-icon-index hamburger-icon" id="hamburger">
+       <span></span>
+       <span></span>
+       <span></span>
+    </div>
+    <nav id="vertical-nav" class="hidden vertical-nav">
+      <p class="close" id="hamburger-exit">x</p>
+      <ul class="nav-ul-vert H">
+          <li> <img src="images/af-logo.svg"
+              alt="Ithaca Apple Harvest Festival 2021"
+              class="svg"></li>
+          <li><img src="images/divider3.png"
+              alt="Ithaca Apple Harvest Festival 2021"
+              class="divider"></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="vendors.html">Vendors</a></li>
+          <li><a href="map.html">Map and Directions</a></li>
+          <li><img src="images/divider3.png"
+              alt="Ithaca Apple Harvest Festival 2021"
+              class="divider"></li>
+      </ul>
+    </nav>
+    <nav id="horizontal-nav">
       <ul class="nav-ul">
           <li><a href="index.html">Home</a></li>
           <li><a href="vendors.html">Vendors</a></li>
           <li><a href="map.html">Map and Directions</a></li>
       </ul>
     </nav>
+    <div class="rain-banner" id="rain-banner">
+      <div class="banner-flex">
+          <div>  <span class="banner-close" id="rain-banner-exit">x</span>  <span class="rain-notice-header">Rain Notice</span>
+          <div class="original-text" ><p id="original-text">Please be aware the forecast for <span>Sunday, Oct 3rd</span> is expected to be rain for the entire day.</p>
+          <p class="hidden" id="more-text">The festival will still occur in rainy weather. Shelter can be found underneath the store covers.</p></div>
+        </div>
+        <div class="buttons">
+          <span class="btn" id="show-more" >Show More </span>
+        </div>
 
+      </div>
+
+    </div>
+  </section>
+
+  <section class="hero-image">
     <div class= "front flex-center">
       <div>
         <!-- Source: instructor provided -->
@@ -38,52 +75,51 @@
 
       </div>
     </div>
+  </section>
 
-    <div class="middle">
-      <div class="middle-vendors flex-center square">
-        <div>
-          <h4>Vendors </h4>
-          <p class="line"> _____________</p>
-          <p class="list"> Food </p>
-          <p class="list"> Entertainment </p>
-          <p class="list"> Arts and Crafts </p>
-          <p></p>
-          <a href="vendors.html"><span class="btn" >Explore</span></a>
-        </div>
+  <section class="middle">
+    <div class="middle-vendors flex-center square">
+      <div>
+        <h4>Vendors </h4>
+        <p class="line"> _____________</p>
+        <p class="list"> Food </p>
+        <p class="list"> Entertainment </p>
+        <p class="list"> Arts and Crafts </p>
+        <p></p>
+        <a href="vendors.html"><span class="btn" >Explore</span></a>
       </div>
+    </div>
 
-      <div class="middle-map flex-center square">
-        <div>
-          <!-- Source: https://www.downtownithaca.com/apple-harvest-festival/-->
-          <picture>
-          <img src="images/minimap.png"
-            alt="Map"
-            class="minimap">
-         </picture>
+    <div class="middle-map flex-center square">
+      <div>
+        <!-- Source: https://www.downtownithaca.com/apple-harvest-festival/-->
+        <picture>
+        <img src="images/minimap.png"
+          alt="Map"
+          class="minimap">
+       </picture>
 
-          <cite class="small-cite"><a href="https://www.downtownithaca.com/apple-harvest-festival/">
-            Source: Downtown Ithaca</a></cite>
-          <a href="map.html"><span class="btn">View Map and Directions</span></a>
+        <cite class="small-cite"><a href="https://www.downtownithaca.com/apple-harvest-festival/">
+          Source: Downtown Ithaca</a></cite>
+        <a href="map.html"><span class="btn">View Map and Directions</span></a>
+     </div>
+   </div>
+
+   <div class="middle-date flex-center square">
+     <div>
+         <!-- Source: instructor provided -->
+         <h4>Festival Hours</h4>
+         <p class="line"> ______________________</p>
+
+         <p class="date">Fri. October 1
+         </p><p class="time">12:00pm - 6:00pm</p>
+         <p class="date">Sat. October 2
+         </p><p class="time"> 10:00am - 6:00pm</p>
+         <p class="date">Sun. October 3
+         </p><p class="time"> 10:00am - 6:00pm</p>
        </div>
-
-
      </div>
-
-     <div class="middle-date flex-center square">
-       <div>
-           <!-- Source: instructor provided -->
-           <h4>Festival Hours</h4>
-           <p class="line"> ______________________</p>
-
-           <p class="date">Fri. October 1
-           </p><p class="time">12:00pm - 6:00pm</p>
-           <p class="date">Sat. October 2
-           </p><p class="time"> 10:00am - 6:00pm</p>
-           <p class="date">Sun. October 3
-           </p><p class="time"> 10:00am - 6:00pm</p>
-         </div>
-     </div>
-  </div>
+  </section>
 
   <section class="end">
     <div class="flex-row history" id="history">
@@ -141,7 +177,8 @@
 
 
   </section>
-
+  <script type="text/javascript" src="scripts/jquery-3.6.0.js"></script>
+  <script type="text/javascript" src="scripts/home.js"></script>
 
 </body>
 
