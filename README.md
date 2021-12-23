@@ -14,6 +14,7 @@ Made with HTML, CSS, JS.
 ![Vendors Page](design/vendors-intro.png)
 
 Popup Interactivity:
+
 ![Vendors Popup](design/vendors-js.png)
 
 #### Map and Directions Page
